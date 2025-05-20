@@ -80,6 +80,10 @@ hr {
     font-size: 1.5em;
 }
 
-.about, .projects { 
+.about { 
+    font-size: 1em;
+}
+
+.projects {
     font-size: 1em;
 }
