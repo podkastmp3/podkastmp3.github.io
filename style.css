@@ -4,6 +4,7 @@ html, body {
     height: 100%;
     background-color: #303030;
     margin: 0;
+    padding: 0;
     display: flex;
     text-align: center;
     align-items: center;
@@ -18,7 +19,7 @@ a {
 }
 
 a:hover {
-        color: #f0f0f0;
+    color: #f0f0f0;
 }
 
 hr {
@@ -26,16 +27,19 @@ hr {
     height: 2px;
     background-color: #474747;
     width: 100%;
+    margin: 20px 0;
 }
 
 .identity {
-    height: 40%;
+    max-width: 90%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 20px;
     box-sizing: border-box;
+    gap: 15px;
 }
 
 .avatar-wrapper {
@@ -44,6 +48,7 @@ hr {
     flex-shrink: 0;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .avatar {
@@ -53,20 +58,23 @@ hr {
 }
 
 .username {
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 1.6em;
+    margin: 5px 0;
 }
 
 .subtitle {
     color: #cacaca;
     font-size: 1em;
+    margin: 0;
 }
 
 .socials {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-icon {
     font-size: 1.5em;
-    margin: 0 10px;
 }
