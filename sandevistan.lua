@@ -87,8 +87,7 @@ local function activateAbility()
 	
 	playSound("rbxassetid://118534165523355", 0.2)
 
-	local originalWalkSpeed = Humanoid.WalkSpeed
-	Humanoid.WalkSpeed = originalWalkSpeed * (1 + SPEED_INCREASE / 100)
+	Humanoid.WalkSpeed = 16 * (1 + SPEED_INCREASE / 100)
 	
 	colorCorrection.Enabled = true
 	local flashTweenInfo = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, 0, false, 0)
@@ -131,7 +130,7 @@ local function activateAbility()
 	
 	tween(Camera, flashTweenInfo, {FieldOfView = 70})
 	
-	Humanoid.WalkSpeed = originalWalkSpeed
+	Humanoid.WalkSpeed = 16
 
 	colorCorrection.Enabled = false
 
