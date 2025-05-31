@@ -126,7 +126,7 @@ local function activateAbility()
 
 	colorCorrection.Enabled = false
 
-	-- Clean up threads
+	
 	if cloneThread then
 		coroutine.close(cloneThread)
 		cloneThread = nil
