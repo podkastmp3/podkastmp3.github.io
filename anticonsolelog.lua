@@ -1,11 +1,12 @@
 local UI = game:GetService('CoreGui').DevConsoleMaster.DevConsoleWindow.DevConsoleUI.MainView.ClientLog
 
 getgenv().print = function(...)
-    local frame = Instance.new('Frame', UI)
+    local frame = Instance.new('Frame')
     frame.AutomaticSize = Enum.AutomaticSize.Y
     frame.Name = #UI:GetChildren() - 1
     frame.Size = UDim2.new(1, 0, 0, 15)
     frame.BackgroundTransparency = 1
+    frame.Parent = UI
 
     local msg = Instance.new('TextLabel', frame)
     msg.AutomaticSize = Enum.AutomaticSize.Y
